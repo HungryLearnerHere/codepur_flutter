@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Catalogue App",
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
+      home: HomePage(),
     );
   }
 }
